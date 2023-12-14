@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <script>
+        const items = [
+            {item: 'apple', amount: 2},
+            {item: 'orange', amount: 1},
+            {item: 'tomato', amount: 10}
+    ]
+
+    let total = 0
+
+            items.forEach( item => {
+                total += item.amount
+            })
+
+            let netto = total + ((total / 100) * 21)
+
+            console.log({TOTAAL: total, NETTO: netto})
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
